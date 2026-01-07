@@ -39,8 +39,72 @@
     </head>
     <body>
 
+        <header class="w-full">
+            <div class="navbar max-w-[1200px] mx-auto px-4 lg:px-24">
+
+                <!-- Navbar start -->
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button"
+                            class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+
+                        <ul
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Services <i
+                                        class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Cases <i
+                                        class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Blog <i
+                                        class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Contact us <i
+                                        class="fa-solid fa-chevron-right"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <a class="btn btn-ghost text-xl px-0">
+                        <img src="./images/logo2.png" alt="Justice Logo"
+                            class="h-8">
+                    </a>
+                </div>
+
+                <!-- Navbar center -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal gap-2">
+                        <li><a>Home</a></li>
+                        <li><a>Services <i
+                                    class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Cases <i
+                                    class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Blog <i
+                                    class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Contact us <i
+                                    class="fa-solid fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- Navbar end -->
+                <div class="navbar-end">
+                    <a class="btn bg-[#B68C5A] text-white">
+                        Free Consultation
+                    </a>
+                </div>
+
+            </div>
+        </header>
+
         <!-- Navbar -->
-        <header class="my-10">
+        <!-- <header class="my-10">
             <div class="navbar lg:px-[100px]">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -93,12 +157,12 @@
                     <a class="btn bg-[#B68C5A]">Free Consultation</a>
                 </div>
             </div>
-        </header>
+        </header> -->
 
         <main class="my-16">
 
             <!-- Banner -->
-            <section class="w-full flex justify-center mt-6 lg:mt-10">
+            <section class="w-full flex justify-center">
                 <div
                     class="relative w-full max-w-[800px] rounded-xl overflow-hidden">
 
@@ -106,31 +170,32 @@
                     <img
                         src="./images/banner.png"
                         alt
-                        class="w-full h-[180px] lg:h-[390px] object-cover opacity-90">
+                        class="w-full h-[220px] lg:h-[420px] object-cover">
 
-                    <!-- Overlay content -->
+                    <!-- Overlay -->
                     <div
-                        class="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4 lg:px-12 space-y-4">
+                        class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6 space-y-4">
 
-                        <h3 class="eb-garamond-font text-xl lg:text-7xl">
+                        <h1 class="eb-garamond-font text-2xl lg:text-7xl">
                             We Provide Effective <br> Legal Solutions
-                        </h3>
+                        </h1>
 
-                        <p class="poppins-thin max-w-xl">
+                        <p class="max-w-xl text-sm lg:text-base opacity-90">
                             There are many variations of passages of Lorem Ipsum
                             available,
                             but the majority have suffered alteration.
                         </p>
 
-                        <div class="flex gap-2 mt-4">
+                        <div class="flex gap-2 mt-4 w-full justify-center">
                             <input
                                 type="text"
                                 placeholder="Search Your Services"
-                                class="input p-2 border-none w-[200px] lg:w-[420px]" />
-                            <button class="btn bg-red-400 w-20 lg:w-24">
+                                class="input w-[65%] lg:w-[420px]" />
+                            <button class="btn bg-red-400 text-white px-6">
                                 Search
                             </button>
                         </div>
+
                     </div>
                 </div>
             </section>
